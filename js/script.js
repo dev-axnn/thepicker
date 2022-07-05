@@ -1,10 +1,9 @@
-$(document).ready()
+$(document).ready(){};
 
 
 
 window.onload = function(){
-  const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
+  new Swiper('.sw-visual-1', {
     loop: true,
   });
 
