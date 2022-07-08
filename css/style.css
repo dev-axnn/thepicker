@@ -205,6 +205,31 @@ body {
   margin-bottom: 35px;
 }
 
+.sw-vs-1-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  z-index: 9;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  opacity: 0.5;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  opacity: 1;
+}
+
 .visual-shop {
   position: relative;
   display: block;
@@ -234,22 +259,25 @@ body {
   float: right;
   width: calc(67% - 30px);
   height: 540px;
-  background: url('../images/visual-motion-2.jpg') no-repeat center;
+  background: url('../images/visual-motion-2.jpg') no-repeat center top;
   background-size: cover;
   margin-bottom: 30px;
 }
 
 .visual-motion-2 P {
+  padding: 180px 0 0 115px;
   font-size: 18px;
+  font-weight: 800;
   color: #fff;
-  line-height: ;
+  line-height: 50px;
+  letter-spacing: -1px;
 }
 
 .visual-motion-3 {
   float: left;
   width: 65%;
   height: 520px;
-  background: url('../images/visual-motion-3.png') no-repeat center;
+  background: url('../images/visual-motion-3.png') no-repeat center top;
   background-size: cover;
 }
 
@@ -265,11 +293,24 @@ body {
 .products {
   position: relative;
   display: block;
+  padding: 0 30px;
 }
 
 .preview-products {
   position: relative;
   display: block;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.preview-txt {
+  display: block;
+  width: 330px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  color: #212121;
 }
 
 .best-products {
