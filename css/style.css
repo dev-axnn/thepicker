@@ -319,7 +319,7 @@ body {
   margin-bottom: 60px;
 }
 
-.preview-left h2 {
+.preview-left h3 {
   font-size: 16px;
   font-weight: 700;
   color: #212121;
@@ -368,6 +368,7 @@ body {
   position: relative;
   display: block;
   width: 215px;
+  height: 410px;
   text-align: center;
   float: left;
   margin-right: 20px;
@@ -396,9 +397,20 @@ body {
 
 .preview-products-option {}
 
-.best-products {
+.best-wrap {
   position: relative;
   display: block;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.best-wrap h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 65px;
+  color: #212121;
+
 }
 
 /* notice & press */
