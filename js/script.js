@@ -12,4 +12,11 @@ window.onload = function(){
     },
   });
 
+  new Swiper('.sw-bestproducts', {
+    loop: true,
+    speed: 1500,
+    autoplay: {
+      delay: 7000,
+    }
+  });
 };
