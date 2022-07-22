@@ -40,6 +40,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
   <title>더피커</title>
+
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="js/prefixfree.min.js"></script>
   <!--[if lt IE 9]> 
@@ -49,6 +50,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
+
+  <!-- aos 관련 코드 -->
+  <link href="js/aos/aos.css" rel="stylesheet">
+  <script src="js/aos/aos.js"></script>
+
   <!-- 사용자 지정 -->
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -95,12 +101,12 @@
     </section>
     <section class="visual-shop"></section>
     <section class="visual-motion clearfix">
-      <div class="visual-motion-1"></div>
-      <div class="visual-motion-2">
+      <div class="visual-motion-1" data-aos="fade-up" data-aos-duration="1000"></div>
+      <div class="visual-motion-2" data-aos="fade-up" data-aos-duration="1000">
         <p>ZERO-WASTE LIFESTYLE<br>제로웨이스트 라이프스타일 플랫폼</p>
       </div>
-      <div class="visual-motion-3"></div>
-      <div class="visual-motion-4"></div>
+      <div class="visual-motion-3" data-aos="fade-up" data-aos-duration="1000"></div>
+      <div class="visual-motion-4" data-aos="fade-up" data-aos-duration="1000"></div>
     </section>
     <!-- //visual -->
 
@@ -127,7 +133,7 @@
               <li><a href="#">zero waste kits</a></li>
             </ul>
           </div>
-          <div class="preview-right">
+          <div class="preview-right" data-aos="fade-up" data-aos-duration="1000">
             <ul class="preview-products clearfix">
               <li>
                 <img src="images/preview1.jpg" href="#" alt="이미지설명">
@@ -188,222 +194,291 @@
             </ul>
           </div>
         </div>
-        <div class="best-wrap clearfix">
+        <div class="best-wrap clearfix" data-aos="fade-up" data-aos-duration="1000">
           <h2>BEST PRODUCTS</h2>
           <div class="swiper-container sw-bestproducts">
-            <div class="swiper-wrapper best-list-wrap">
-              <ul class="swiper-slide best-list-1">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-              <ul class="swiper-slide best-list-2">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-              <ul class="swiper-slide best-list-3">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-rice-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-              <ul class="swiper-slide best-list-4">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-              <ul class="swiper-slide best-list-5">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-              <ul class="swiper-slide best-list-6">
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-                <li>
-                  <img src="http://via.placeholder.com/238" alt="">
-                  <a href="#" class="best-products-title">상품타이틀</a>
-                  <a href="#" class="best-products-price">상품가</a>
-                  <a href="#" class="best-products-price-ot">할인전가격</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="swiper-wrapper best-list-wrap">
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-rice-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+              <li class="swiper-slide">
+                <img src="http://via.placeholder.com/238" alt="">
+                <a href="#" class="best-products-title">상품타이틀</a>
+                <a href="#" class="best-products-price">상품가</a>
+                <a href="#" class="best-products-price-ot">할인전가격</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <hr>
     </section>
     <!-- //products -->
 
     <!-- notice & press -->
     <section class="notice-press">
       <div class="inner">
-        <div class="notice">
+        <div class="notice clearfix">
+          <div class="notice-press-title">
+            <strong>공지사항</strong>
+            <h3>notice</h3>
+          </div>
+          <ul>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>공지사항 🏡 더피커 정식 오픈 & 6주년 이벤트! 안내</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>공지사항 더피커 자원순환 품목안내 (Picker Recycling Station)</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>공지사항 [Refill & Restore] 벌크 리필 파트 소개</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>공지사항 WE'RE OPEN 더피커 매장오픈</a>
+            </li>
+          </ul>
         </div>
-        <div class="press">
+        <div class="press clearfix">
+          <div class="notice-press-title">
+            <strong>언론소개</strong>
+            <h3>press</h3>
+          </div>
+          <ul>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>[블루메 미술관] 송경호 대표 | Blueme Table</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>[중앙일보_fol:in] 죄책감 NO! 성수동에는 '포장지'없는 마트가 있다.</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>[굿모닝 팝스] "소비 문화가 바뀌어야 환경을 지킬 수 있다"</a>
+            </li>
+            <li>
+              <img src="http://via.placeholder.com/233x177" alt="">
+              <a>[동아일보] "약간의 불편함이 지구를 살린다" 제로 웨이스트 매장</a>
+            </li>
+          </ul>
         </div>
+        <hr>
       </div>
     </section>
     <!-- //notice & press -->
 
     <!-- instagram -->
     <section class="insta">
+      <div class="inner">
+        <h3>instagram</h3>
+        <ul class="clearfix">
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+          <li>
+            <img src="http://via.placeholder.com/235x235" alt="">
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- //instagram -->
 
