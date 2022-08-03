@@ -293,6 +293,7 @@ body {
 .products {
   position: relative;
   display: block;
+  border-bottom: 1px solid #535353;
 }
 
 .preview-wrap {
@@ -429,8 +430,9 @@ body {
 
 .sw-bestproducts {
   max-width: 1250px;
-  height: 350px;
+  height: 306px;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .best-list-wrap{
@@ -441,9 +443,8 @@ body {
 
 .best-list-wrap li {
   float: left;
-  height: 350px;
   text-align: center;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 .best-list-wrap li img {
