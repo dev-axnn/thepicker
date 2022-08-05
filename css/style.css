@@ -36,6 +36,7 @@ body {
   line-height: 1.6;
   color: #000;
   overflow-x: hidden;  /* 화면 폭을 줄였을때 가로 스크롤바가 생기는 걸 방지 */
+  padding-top: 70px;   /* header 고정을 위한 값 */
 }
 
 /* ==== 공통영역 ==== */
@@ -60,9 +61,13 @@ body {
 
 /* header */
 .header {
-  position: relative;
-  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 9999;
 }
 
 .header .inner {
@@ -106,6 +111,39 @@ body {
   background-size: contain;
 }
 
+.interface {
+  position: absolute;
+  right: 0;
+  top: 26px;
+}
+
+.interface li {
+  float: left;
+  margin-left: 23px;
+  font-size: 0;
+}
+
+.interface-login {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-login.png') no-repeat center;
+}
+
+.interface-cart {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-cart.png') no-repeat center;
+}
+
+.interface-search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-search.png') no-repeat center;
+}
+
 /* visual */
 .visual-main {
   position: relative;
@@ -124,7 +162,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #555;
+  background: #444;
   width: 100%;
   height: 100%;
   opacity: 15%;
@@ -159,7 +197,7 @@ body {
   position: relative;
   background: url('../images/visual-main-2.jpg') no-repeat center;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   height: 850px;
 }
 
@@ -262,6 +300,7 @@ body {
   background: url('../images/visual-motion-2.jpg') no-repeat center top;
   background-size: cover;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .visual-motion-2 P {
@@ -279,6 +318,7 @@ body {
   height: 520px;
   background: url('../images/visual-motion-3.png') no-repeat center top;
   background-size: cover;
+  cursor: pointer;
 }
 
 .visual-motion-4 {
@@ -513,10 +553,6 @@ body {
   margin-top: 13px;
 }
 
-.notice-press ul li img {
-  margin-bottom: 20px;
-}
-
 .notice-press ul li a {
   display: block;
   font-size: 14px;
@@ -543,13 +579,39 @@ body {
 
 .notice-press ul li .picture {
   width: 100%;
-  height: 177px;
-  background: #999 url() no-repeat center;
+  height: 235px;
   margin-bottom: 20px;
 }
 
 .notice-press ul li:last-child {
   margin-right: 0;
+}
+
+.notice-press hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+}
+
+.notice li:first-child .picture {
+  background: url('../images/notice1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.notice li:nth-child(2) .picture {
+  background: url('../images/notice2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.notice li:nth-child(3) .picture {
+  background: url('../images/notice3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.notice li:last-child .picture {
+  background: url('../images/notice4.png') no-repeat 50% top;
+  background-size: cover;
 }
 
 .press {
@@ -558,11 +620,24 @@ body {
   margin-bottom: 40px;
 }
 
-.notice-press hr {
-  width: 100%;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.04);
-  border: none;
+.press li:first-child .picture {
+  background: url('../images/press1.png') no-repeat center;
+  background-size: cover;
+}
+
+.press li:nth-child(2) .picture {
+  background: url('../images/press2.png') no-repeat center;
+  background-size: cover;
+}
+
+.press li:nth-child(3) .picture {
+  background: url('../images/press3.png') no-repeat center;
+  background-size: cover;
+}
+
+.press li:last-child .picture {
+  background: url('../images/press5.jpg') no-repeat center;
+  background-size: cover;
 }
 
 /* instagram */
@@ -599,7 +674,86 @@ body {
   height: 233px;
   margin-right: 1.5%;
   margin-bottom: 20px;
-  background: #999 url() no-repeat center;
+}
+
+.insta-pic li:first-child a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(2) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(3) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(4) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(5) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta5.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(6) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta6.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(7) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta7.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(8) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta8.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(9) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta9.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.insta-pic li:nth-child(10) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/insta10.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .insta-pic li:nth-child(5n) {
