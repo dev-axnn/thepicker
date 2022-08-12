@@ -413,6 +413,7 @@ body {
   text-align: center;
   float: left;
   margin-right: 20px;
+  text-align: center;
 }
 
 .preview-products li:nth-child(4n) {
@@ -436,23 +437,73 @@ body {
 }
 
 .preview-products-price {
+  display: inline-block;
   font-size: 13px;
   font-weight: 600;
   font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
   line-height: 18px;
   color: rgba(33, 33, 33, 0.6);
-  margin-right: 2px;
+  margin-bottom: 5px;
 }
 
 .preview-products-price-ot {
-  display: block;
+  display: inline-block;
   font-size: 13px;
   font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
   color: rgba(33,33,33,0.45);
   text-decoration: line-through;
 }
 
-.preview-products-option {}
+.preview-products-option {
+  width: 47px;
+  height: 24px;
+  background: #fe5356;
+  font-size: 11px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.preview-products-option2 {
+  width: 47px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  text-align: center;
+  line-height: 24px;
+  color: #fb4637;
+  margin: 0 auto;
+}
+
+.color-option {
+  position: relative;
+}
+
+.color-option-set {
+  position: absolute;
+  top: 175px;
+  right: 13px;
+  z-index: 99;
+}
+
+.color-option-set span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid rgba(33,33,33,0.135);
+  font-size: 0;
+  margin-left: 5px;
+}
+
+.color-option-set span:first-child {
+  background: #cfa13d;
+}
+
+.color-option-set span:last-child {
+  background: #2d2c2c;
+}
 
 .best-wrap {
   position: relative;
@@ -471,33 +522,35 @@ body {
 
 .sw-bestproducts {
   max-width: 1250px;
-  height: 306px;
   overflow: hidden;
   margin-bottom: 100px;
 }
 
 .best-list-wrap{
   float: left;
-  white-space: nowrap;
-  word-break: keep-all;
 }
 
 .best-list-wrap li {
   float: left;
+  width: 238px;
   text-align: center;
   /* margin-right: 15px; */
 }
 
 .best-list-wrap li img {
+  width: 238px;
+  height: 238px;
   margin-bottom: 25px;
 }
 
 .best-products-title {
   display: block;
+  width: 100%;
   font-size: 13px;
   font-weight: 600;
   font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
   color: #121212;
+  white-space: wrap;
 }
 
 .best-products-price {
@@ -952,4 +1005,5 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
+visibility:;
 }
