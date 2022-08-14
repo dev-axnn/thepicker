@@ -1,5 +1,16 @@
 window.onload = function(){
   AOS.init();
+
+  // Whole Mene Toggle function (왜 안 되는지 모르겠다...)
+  // let menuButton = document.getElementsById('menu-btn');
+  // let menuWrap = document.getElementsById('menu-wrap');
+  // menuButton.onclick = function(){
+  //   if(menuWrap.style.display === "none"){
+  //     menuWrap.style.display = "block";
+  //   } else {
+  //     menuWrap.style.display = "none";
+  //   }
+  // };
   
   new Swiper('.sw-visual-1', {
     effect: 'fade',
