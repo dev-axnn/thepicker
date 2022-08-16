@@ -58,7 +58,6 @@ body {
 
 
 /* ==== 개별영역 ==== */
-
 .wrap {
   position: relative;
 }
@@ -109,11 +108,46 @@ body {
   z-index: 99998;
 }
 
-.menu-list {
+.depth1 {
   font-size: 22px;
   font-weight: 700;
   line-height: 65px;
   margin: 3px 0 15px 120px;
+}
+
+.depth1 li:hover .depth1 > a {
+  border-bottom: 4px solid #000;
+}
+
+.depth2 {
+  font-size: 17.6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: #212121;
+}
+
+.depth2 li {
+  position: relative;
+}
+
+.depth2 li a {
+  margin-left: 15px;
+}
+
+.depth2 li a::after {
+  content: '';
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: #212121;
+}
+
+.depth2 li:hover a {
+  color: #999;
 }
 
 .menu-home {
@@ -331,6 +365,7 @@ body {
 }
 
 .visual-motion-2 {
+  position: relative;
   float: right;
   width: calc(67% - 30px);
   height: 540px;
@@ -340,8 +375,10 @@ body {
   cursor: pointer;
 }
 
-.visual-motion-2 P {
-  padding: 180px 0 0 115px;
+.visual-motion-2 p {
+  position: absolute;
+  left: 10%;
+  top: 30%;
   font-size: 18px;
   font-weight: 800;
   color: #fff;
@@ -350,12 +387,24 @@ body {
 }
 
 .visual-motion-3 {
+  position: relative;
   float: left;
   width: 65%;
   height: 520px;
   background: url('../images/visual-motion-3.png') no-repeat center top;
   background-size: cover;
   cursor: pointer;
+}
+
+.visual-motion-3 p {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: -1px;
 }
 
 .visual-motion-4 {
@@ -649,10 +698,17 @@ body {
 }
 
 .notice-press ul li a {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   color: #000;
+
+  overflow:hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .notice {
@@ -674,7 +730,8 @@ body {
 
 .notice-press ul li .picture {
   width: 100%;
-  height: 235px;
+  height: 18.5vw;
+  max-height: 235px;
   margin-bottom: 20px;
 }
 
@@ -766,7 +823,8 @@ body {
   display: block;
   float: left;
   width: 18.8%;
-  height: 233px;
+  height: 17.5vw;
+  max-height: 233px;
   margin-right: 1.5%;
   margin-bottom: 20px;
 }
@@ -986,7 +1044,7 @@ body {
 .footer-right {
   position: relative;
   width: 50%;
-  float: left;
+  float: right;
 }
 
 .footer-r1 {

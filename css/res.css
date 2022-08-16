@@ -1,3 +1,38 @@
+/* header */
+@media screen and (max-width: 1100px) {
+  body {
+    padding-top: 60px;   /* header 고정을 위한 값 */
+  }
+
+  .header .inner {
+    height: 60px;
+  }
+
+  #menu-btn {
+    left: 40px;
+    top: 15px;
+  }
+
+  .interface {
+    position: absolute;
+    right: -8px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #menu-btn {
+    left: 20px;
+    top: 15px;
+  }
+
+  .interface {
+    position: absolute;
+    right: -28px;
+    top: 20px;
+  }
+}
+
 /* visual */
 @media screen and (max-width: 1500px) {
   .vs-main-1 p {
@@ -53,6 +88,45 @@
     font-size: 18px;
     line-height: 22px;
   }
+  
+  .visual-shop {
+    height: 450px;
+    background: #19302a url('../images/visual-shop.jpg') no-repeat center 55%;
+    background-size: 1500px;
+  }
+
+  .visual-motion-1 {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .visual-motion-2 {
+    width: calc(67% - 20px);
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .visual-motion-2 p {
+    font-size: 15px;
+    line-height: 30px;
+    top: 70%;
+  }
+
+  .visual-motion-3 {
+    height: 300px;
+  }
+  
+  .visual-motion-3 p {
+    font-size: 15px;
+    line-height: 30px;
+    top: 70%;
+  }
+
+  .visual-motion-4 {
+    width: calc(35% - 20px);
+    height: 300px;
+  }
+
 }
 
 @media screen and (max-width: 840px) {
@@ -79,6 +153,7 @@
   }
 
   .preview-txt {
+    margin-bottom: 40px;
     font-size: 17px;
     line-height: 1.6;
   }
@@ -169,5 +244,180 @@
 @media screen and (max-width: 780px) {
   .preview-products li {
     height: 58vw;
+  }
+}
+
+/* notice & press */
+@media screen and (max-width: 1330px) {
+  .notice-press .inner {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .notice-press ul li a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  
+  .notice-press-title {
+    width: 15%;
+    float: left;
+  }
+
+  .notice-press-title strong {
+    font-size: 16px;
+  }
+
+  .notice-press-title h3 {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+
+  .notice-press ul {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .notice-press .inner {
+    width: 90%;
+  }
+
+  .notice-press-title {
+    width: 100%;
+  }
+
+  .notice-press-title strong {
+    display: inline;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .notice-press-title h3 {
+    display: inline;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #19302a;
+    margin-left: 5px;
+  }
+
+  .notice-press ul {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .notice-press ul li a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .notice-press ul li {
+    float: left;
+    width: 47.5%;
+    margin-right: 5%;
+  }
+
+  .notice-press ul li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .notice-press ul li:nth-child(3), .notice-press ul li:nth-child(4) {
+    display: none;
+  }
+
+  .notice-press ul li .picture {
+    width: 100%;
+    height: 44vw;
+    max-height: 420px;
+    margin-bottom: 20px;
+  }
+
+  .press {
+    margin-bottom: 10px;
+  }
+}
+
+/* instagram */
+@media screen and (max-width: 1330px) {
+  .insta .inner {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .insta .inner {
+    width: 90%;
+  }
+
+  .insta h3 {
+    margin: 50px 0;
+  }
+
+  .insta-pic {
+    margin-bottom: 110px;
+  }
+
+  .insta-pic li {
+    width: 30%;
+    height: 26vw;
+    max-height: 250px;
+    margin-right: 5%;
+    margin-bottom: 20px;
+  }
+
+  .insta-pic li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .insta-pic li:nth-child(5n) {
+    margin-right: 5%;
+  }
+
+  .insta-pic li:nth-child(7), .insta-pic li:nth-child(8), .insta-pic li:nth-child(9), .insta-pic li:nth-child(10) {
+    display: none;
+  }
+}
+
+/* footer */
+@media screen and (max-width: 1430px) {
+  .footer-inner {
+    width: 95%;
+    padding-top: 30px;
+  }
+
+  .footer-r1 {
+    width: 35%;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer-inner {
+    width: 90%;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .app-download {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .footer-r1, .footer-r2 {
+    display: none;
+  }
+
+  .icon-instagram {
+    position: absolute;
+    right: 0;
+    top: -90px;
+    font-size: 35px;
   }
 }
