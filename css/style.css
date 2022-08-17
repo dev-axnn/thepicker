@@ -126,6 +126,10 @@ body {
   margin: 3px 0 15px 120px;
 }
 
+.depth1 > li {
+  width: auto;
+}
+
 .depth1 > li > a {
   position: relative;
 }
@@ -139,11 +143,15 @@ body {
   width: 0%;
   height: 4px;
   background: #000;
-  transition: width 0.3s;
+  transition: all 0.3s;
 }
 
 .depth1 > li:hover > a::after {
   width: 100%;
+}
+
+.depth1 > li:hover > a {
+  color: #09342c;
 }
 
 .depth2 {
@@ -152,7 +160,18 @@ body {
   text-transform: uppercase;
   line-height: 40px;
   color: #212121;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.depth2-show {
+  height: 200px;
+  transition: height 0.5s;
+}
+
+.depth2-close {
+  height: 0;
 }
 
 .depth2 li {
@@ -176,10 +195,6 @@ body {
 
 .depth2 li:hover a {
   color: #999;
-}
-
-.menu-home {
-  color: #09342c;
 }
 
 /* header */
@@ -1133,5 +1148,5 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
-visibility:;
+  white-space: nowrap;
 }

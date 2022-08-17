@@ -17,18 +17,26 @@ window.onload = function(){
     }
   });
 
-  // 메뉴 depth2 숨겼다 나타나기
-  let depth1Li = $('.depth1 > li');
-  $.each(depth1Li, function(index, item){
-    // 상위메뉴 찾아서 보관
-    let temp = $(this).find('.depth1-more');
-    temp.mouseenter(function(){
-      temp.addClass('depth2-show');
-    });
-    temp.mouseleave(function(){
-      temp.removeClass('depth2-show');
-    });
+  // (??) 바깥 부분 클릭시 메뉴 닫기 기능
 
+
+  // 메뉴 depth2 숨겼다 나타나기
+  // (??) A 구역에서 B 구역으로 넘어갈 때 transition 기능 없음.
+  // (??) 구현은 됐으나 이 코딩이 맞는지 확신이 없음.
+  let depth1Menu = $('.depth1-more');
+  let depth2 = $('.depth2')
+
+  $.each(depth1Menu, function(index){
+    $(this).mouseenter(function(){
+      depth2.hide();
+      depth2.eq(index).show();
+      depth2.addClass('depth2-show');
+      depth2.removeClass('depth2-close');
+    })
+    $(this).mouseleave(function(){
+      depth2.removeClass('depth2-show');
+      depth2.addClass('depth2-close');
+    })
   });
   
   new Swiper('.sw-visual-1', {
@@ -50,8 +58,8 @@ window.onload = function(){
     slidesPerGroup : 6, // 그룹으로 묶을 수
     loop: true,
     speed: 1500,
-    slidesPerView : 5, // 동시에 보여줄 슬라이드 갯수
-    spaceBetween : 15, // 슬라이드간 간격
+    slidesPerView : 5,  // 동시에 보여줄 슬라이드 갯수
+    spaceBetween : 15,  // 슬라이드간 간격
     slidesPerGroup : 6, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
     autoplay: {
       delay: 7000,
