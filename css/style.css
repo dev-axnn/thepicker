@@ -63,7 +63,7 @@ body {
 }
 
 /* Whole Menu */
-#menu-btn {
+.menu-btn {
   position: fixed;
   left: 60px;
   top: 20px;
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
 }
 
-.menu-bt {
+.menu-bt1 {
   position: absolute;
   top: 5px;
   left: 50%;
@@ -84,20 +84,31 @@ body {
   width: 24px;
   height: 5px;
   background: #212121;
+  transition: transform 0.3s;
 }
 
-.menu-bt::after {
+.menu-bt2 {
   content: '';
   position: absolute;
-  left: 0;
-  top: 13px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 24px;
   height: 5px;
   background: #212121;
+  transition: transform 0.3s;
 }
 
-#menu-wrap {
+.menu-btn-close > .menu-bt1 {
+  transform: translate(-50%, 150%) rotate(45deg);
+}
+
+.menu-btn-close > .menu-bt2 {
+  transform: translate(-50%, -150%) rotate(-45deg);
+}
+
+.menu-wrap {
   position: fixed;
   left: 0;
   top: 0;
@@ -115,8 +126,24 @@ body {
   margin: 3px 0 15px 120px;
 }
 
-.depth1 li:hover .depth1 > a {
-  border-bottom: 4px solid #000;
+.depth1 > li > a {
+  position: relative;
+}
+
+.depth1 > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.depth1 > li:hover > a::after {
+  width: 100%;
 }
 
 .depth2 {
@@ -125,6 +152,7 @@ body {
   text-transform: uppercase;
   line-height: 40px;
   color: #212121;
+  display: none;
 }
 
 .depth2 li {

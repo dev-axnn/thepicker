@@ -1,16 +1,35 @@
 window.onload = function(){
   AOS.init();
 
-  // Whole Mene Toggle function (왜 안 되는지 모르겠다...)
-  // let menuBtn = $('.menu-btn');
-  // let menuWrap = $('.menu-wrap');
-  // menuBtn.click(function() {
-  //   if(menuWrap.style.display === "none"){
-  //     menuWrap.style.display = "block";
-  //   } else {
-  //     menuWrap.style.display = "none";
-  //   }
-  // });
+  // 메뉴 토글(?) 설정
+  let menuBtn = $('.menu-btn');
+  let menuWrap = $('.menu-wrap');
+  menuBtn.click(function() {
+    let result = menuBtn.hasClass('menu-btn-open');
+    if(result == true) {
+      menuBtn.removeClass('menu-btn-open');
+      menuBtn.addClass('menu-btn-close');
+      menuWrap.show();
+    }else {
+      menuBtn.removeClass('menu-btn-close');
+      menuBtn.addClass('menu-btn-open');
+      menuWrap.hide();
+    }
+  });
+
+  // 메뉴 depth2 숨겼다 나타나기
+  let depth1Li = $('.depth1 > li');
+  $.each(depth1Li, function(index, item){
+    // 상위메뉴 찾아서 보관
+    let temp = $(this).find('.depth1-more');
+    temp.mouseenter(function(){
+      temp.addClass('depth2-show');
+    });
+    temp.mouseleave(function(){
+      temp.removeClass('depth2-show');
+    });
+
+  });
   
   new Swiper('.sw-visual-1', {
     effect: 'fade',
