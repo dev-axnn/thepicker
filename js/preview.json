@@ -1,0 +1,84 @@
+{
+  "result" : [
+    {
+      "img": "images/preview5.jpg",
+      "displayC": 0,
+      "title": "[닥터노아] 마루 대나무칫솔 콤팩트 (6개 벌크 /낱개)",
+      "price": "16,800원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 0
+    }, 
+    {
+      "img": "images/preview6.png",
+      "displayC": 0,
+      "title": "[mailPack] 메일팩 찌꺼기 지갑",
+      "price": "5,000원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 1
+    }, 
+    {
+      "img": "images/preview7.jpg",
+      "displayC": 1,
+      "title": "[mailPack] 메일팩 에어팟 프로 케이스 (자투리 원단)",
+      "price": "23,000원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 0
+    }, 
+    {
+      "img": "images/preview8.png",
+      "displayC": 0,
+      "title": "[다시쓰는그랩] 밀랍랩 생활랩",
+      "price": "5,000원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 0
+    }, 
+    {
+      "img": "images/preview1.jpg",
+      "displayC": 0,
+      "title": "[프레시버블] 유기농 소프넛 체험팩 세트",
+      "price": "6,800원",
+      "priceOt": "7,200원",
+      "displayPo": 1,
+      "displayS": 0,
+      "displayB": 0
+    }, 
+    {
+      "img": "images/preview2.jpg",
+      "displayC": 0,
+      "title": "[플랑드비] 올라이트바디솝 뤽상부르",
+      "price": "18,000원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 0
+    }, 
+    {
+      "img": "images/preview3.jpg",
+      "displayC": 0,
+      "title": "[플랑드비] 올라이트바디솝 퓨어",
+      "price": "16,500원",
+      "priceOt": "0",
+      "displayPo": 0,
+      "displayS": 0,
+      "displayB": 1
+    }, 
+    {
+      "img": "images/preview4.jpg",
+      "displayC": 0,
+      "title": "[JALLA] 다용도 스텐 분리형 가위",
+      "price": "20,000원",
+      "priceOt": "20,900원",
+      "displayPo": 1,
+      "displayS": 1,
+      "displayB": 0
+    }
+  ]
+}
