@@ -115,7 +115,7 @@ window.onload = function(){
       `;
       bestTxt += temp;
     }
-    bestProduct.html(bestTxt);
+    bestProduct.html(bestTxt); 
     
     new Swiper('.sw-bestproducts', {
       slidesPerView: 2, // 동시에 보여줄 슬라이드 갯수
@@ -156,3 +156,14 @@ window.onload = function(){
     });
   });
 };
+
+$(document).ready(function(){
+  // Modal 기능
+  let modalWrap = $('.modal-wrap');
+  let modalClose = $('.modal-close');
+  // click() 을 이용해서 hide() 해보자!
+  modalClose.click(function(){
+    // modalWrap.hide();
+    modalWrap.stop().fadeOut(300);
+  });
+});

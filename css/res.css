@@ -382,10 +382,36 @@
   }
 
   .insta-pic li {
-    width: 30%;
-    height: 26vw;
+    width: 23.5%;
+    height: 22vw;
     max-height: 250px;
-    margin-right: 5%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+
+  .insta-pic li:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .insta-pic li:nth-child(5n) {
+    margin-right: 2%;
+  }
+
+  .insta-pic li:nth-child(8n) {
+    margin-right: 0;
+  }
+
+  .insta-pic li:nth-child(9), .insta-pic li:nth-child(10) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .insta-pic li {
+    width: 31%;
+    height: 27.5vw;
+    max-height: 250px;
+    margin-right: 3.5%;
     margin-bottom: 20px;
   }
 
@@ -393,8 +419,16 @@
     margin-right: 0;
   }
 
+  .insta-pic li:nth-child(4n) {
+    margin-right: 3.5%;
+  }
+
   .insta-pic li:nth-child(5n) {
-    margin-right: 5%;
+    margin-right: 3.5%;
+  }
+
+  .insta-pic li:nth-child(6n) {
+    margin-right: 0;
   }
 
   .insta-pic li:nth-child(7), .insta-pic li:nth-child(8), .insta-pic li:nth-child(9), .insta-pic li:nth-child(10) {
