@@ -71,17 +71,16 @@ window.onload = function(){
   // .catch(err => console.log("에러내용 : ", err));
 
   fetch('js/preview.json')
-    .then(res => res.json(res))
-    .then(data => {
-      // 하고 싶은 일을 작성한다.
-      console.log(data.result)
-      let prevProductArr = data.result;
-      let prevProduct = $('.preview-products');
-      let prevTotal = prevProductArr.length;
-      let prevTxt = '';
-      for (let i = 0; i < prevTotal; i++) {
-        let item = prevProductArr[i];
-        prevTxt += `
+  .then(res => res.json(res))
+  .then(data => {
+    // 하고 싶은 일을 작성한다.
+    let prevProductArr = data.result;
+    let prevProduct = $('.preview-products');
+    let prevTotal = prevProductArr.length;
+    let prevTxt = '';
+    for (let i = 0; i < prevTotal; i++) {
+      let item = prevProductArr[i];
+      prevTxt += `
         <li>
           <a href="#" class="preview-products-img color-option"><img src="${item.img}" href="#" alt="${item.title}"><div class="color-option-set" style="${item.displayC == 0 ? 'display:none' : '' }"><span>yellow</span><span>black</span></div></a>
           <a href="#" class="preview-products-title">${item.title}</a>
@@ -91,43 +90,69 @@ window.onload = function(){
           <a href="#" class="preview-products-option2" style="${item.displayB == 0 ? 'display:none' : ''}">BEST</a>
         </li>
       `;
-      };
-      prevProduct.html(prevTxt);
-    })
-    .catch(err => console.log(err));
+    };
+    prevProduct.html(prevTxt);
+  })
+  .catch(err => console.log(err));
 
-    fetch('js/best.json')
-    .then(res => res.json(res))
-    .then(data => {
-      // 하고 싶은 일을 작성한다.
-      console.log(data.result)
-      let bestProductArr = data.result;
-      let bestProduct = $('.best-list-wrap');
-      let bestTotal = bestProductArr.length;
-      let bestTxt = '';
-      for (let i = 0; i < bestTotal; i++) {
-        let item = bestProductArr[i];
-        bestTxt += `
-        <li>
+  let bestProduct = $('.sw-bestproducts .swiper-wrapper');
+  let bestTxt = '';
+
+  fetch('js/best.json')
+  .then(res => res.json(res))
+  .then(data => {
+    let bestProductArr = data.result;
+    let bestTotal = bestProductArr.length;
+    for (let i = 0; i < bestTotal; i++) {
+      let item = bestProductArr[i];
+      let temp = `
+        <div class="swiper-slide best-list-wrap">
           <a href="#" class="best-products-img"><img src="${item.img}" alt="${item.title}"></a>
           <a href="#" class="best-products-title">${item.title}</a>
           <a href="#" class="best-products-price">${item.price}</a>
           <a href="#" class="best-products-price-ot" style="${item.displayPo == 0 ? 'display:none' : '' }">${item.priceOt}</a>
-        </li>
+        </div>
       `;
-      };
-      bestProduct.html(bestTxt);
-    })
-    .catch(err => console.log(err));
-
-  new Swiper('.sw-bestproducts', {
-    slidesPerView: 5, // 동시에 보여줄 슬라이드 갯수
-    spaceBetween: 15, // 슬라이드간 간격    
-    loop: true,
-    speed: 1500,
-    slidesPerGroup: 5, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
-    autoplay: {
-      delay: 7000,
+      bestTxt += temp;
     }
+    bestProduct.html(bestTxt);
+    
+    new Swiper('.sw-bestproducts', {
+      slidesPerView: 2, // 동시에 보여줄 슬라이드 갯수
+      spaceBetween: 20, // 슬라이드간 간격    
+      slidesPerGroup: 2, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+      loop: true,
+      speed: 1500,
+      autoplay: {
+        delay: 7000
+      },
+      navigation: {
+        nextEl: '.best-next-btn',
+        prevEl: '.best-prev-btn'
+      },
+
+      breakpoints: {
+        // 780 클 경우
+        780: {
+          slidesPerView: 3,
+          spaceBetween: 15,  
+          slidesPerGroup: 3
+        },
+
+        // 1100보다 클 경우
+        1100: {
+          slidesPerView: 4,
+          spaceBetween: 15,  
+          slidesPerGroup: 4
+        },
+
+        // 1400보다 클 경우
+        1400: {
+          slidesPerView: 5,
+          spaceBetween: 15,  
+          slidesPerGroup: 5
+        }
+      }
+    });
   });
 };

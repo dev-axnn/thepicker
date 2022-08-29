@@ -1,3 +1,5 @@
 
+.icon-right-open-big:before { content: '\e800'; } /* '' */
+.icon-left-open-big:before { content: '\e801'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-apple:before { content: '\f179'; } /* '' */

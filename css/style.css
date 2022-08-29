@@ -667,30 +667,30 @@ body {
   margin-bottom: 100px;
 }
 
-.best-list-wrap{
-  display: block;
-}
-
-.best-list-wrap li {
-  /* width: 238px; */
+.best-list-wrap {
   text-align: center;
-  /* margin-right: 15px; */
 }
 
-.best-list-wrap li img {
+.best-list-wrap img {
   /* width: 238px; */
   height: 238px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .best-products-title {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
   width: 100%;
   font-size: 13px;
   font-weight: 600;
   font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
   color: #121212;
-  white-space: wrap;
+
+  overflow:hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .best-products-price {
@@ -708,6 +708,32 @@ body {
   color: rgba(33,33,33,0.45);
   text-decoration: line-through;
 }
+
+.best-prev-btn {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #eee;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.best-next-btn {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #eee;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+
 
 .products hr {
   width: 100%;
