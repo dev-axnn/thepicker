@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +14,8 @@ a {
   color: #000;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -25,18 +26,19 @@ img {
 
 html {
   font-size: 10px;
-  overflow-x: hidden;  /* 화면 폭을 줄였을때 가로 스크롤바가 생기는 걸 방지 */
+  overflow-x: hidden; /* 화면 폭을 줄였을때 가로 스크롤바가 생기는 걸 방지 */
 }
 
 body {
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.5px;
   line-height: 1.6;
   color: #000;
-  overflow-x: hidden;  /* 화면 폭을 줄였을때 가로 스크롤바가 생기는 걸 방지 */
-  padding-top: 70px;   /* header 고정을 위한 값 */
+  overflow-x: hidden; /* 화면 폭을 줄였을때 가로 스크롤바가 생기는 걸 방지 */
+  padding-top: 70px; /* header 고정을 위한 값 */
 }
 
 /* ==== 공통영역 ==== */
@@ -49,70 +51,18 @@ body {
 }
 
 .clearfix::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   width: 100%;
   clear: both;
 }
-
 
 /* ==== 개별영역 ==== */
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul, li {
-  list-style: none;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-img {
-  vertical-align: middle;
-  border: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: -0.64;
-  color: #444;
-}
-
-/* === 공통요소 === */
-.clearfix::after {
-  content: '';
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
-}
-
-.inner {
-  position: relative;
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 /* Modal Popup */
 .modal-wrap {
-  font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
+  font-family: "Noto Sans KR", Helvetica, "맑은 고딕", "malgun gothic",
+    "Apple SD Gothic Neo", sans-serif;
   position: fixed;
   left: 0;
   top: 0;
@@ -142,7 +92,8 @@ body {
   height: 86px;
   border-radius: 43px;
   border: 4px solid #fff;
-  background: #00b7ff url('../images/ahn-symbol_300x300_white.png') no-repeat center;
+  background: #00b7ff url("../images/ahn-symbol_300x300_white.png") no-repeat
+    center;
   background-size: 60%;
 }
 
@@ -222,7 +173,7 @@ body {
   width: 502px;
   height: 45px;
   border-radius: 0 0 19px 19px;
-  
+
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -239,7 +190,113 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-/* /Modal Popup */8
+
+@media screen and (max-width: 700px) {
+  .modal-main {
+    width: 71vw;
+    height: 57vw;
+  }
+
+  .modal-notice {
+    padding: 15% 6% 6% 6%;
+    font-size: 2.4vw;
+    line-height: 3.2vw;
+  }
+
+  .modal-notice span {
+    font-size: 2.3vw;
+    margin-top: 2%;
+  }
+
+  .modal-logo {
+    width: 12.3vw;
+    height: 12.3vw;
+    border: 0.5vw solid #fff;
+  }
+
+  .modal-corrections {
+    width: 88%;
+    height: 33.75%;
+    padding: 2vw 3vw;
+  }
+
+  .modal-close {
+    width: 71.1vw;
+    height: 6.5vw;
+    font-size: 2.5vw;
+    line-height: 6.5vw;
+  }
+
+  .modal-close i {
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal-main {
+    width: 300px;
+    height: 245px;
+  }
+
+  .modal-notice {
+    padding: 15% 6% 5% 6%;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .modal-notice span {
+    font-size: 11px;
+  }
+
+  .modal-logo {
+    width: 60px;
+    height: 60px;
+    border: 0.5vw solid #fff;
+  }
+
+  .modal-corrections {
+    width: 260px;
+    height: 80px;
+    padding: 10px 15px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .modal-corrections strong {
+    font-size: 11px;
+    margin-bottom: 4px;
+    line-height: 14px;
+  }
+
+  .corrections-number {
+    float: left;
+    width: 6%;
+  }
+
+  .corrections-txt {
+    float: right;
+    width: 94%;
+  }
+
+  .modal-close {
+    width: 301px;
+    height: 25px;
+    font-size: 11px;
+    line-height: 25px;
+  }
+
+  .modal-close i {
+    display: none;
+  }
+}
+
+.modal-close i {
+  margin-left: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+/* /Modal Popup */
 
 .wrap {
   position: relative;
@@ -272,7 +329,7 @@ body {
 }
 
 .menu-bt2 {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   left: 50%;
@@ -293,7 +350,7 @@ body {
 }
 
 .menu-wrap::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -330,7 +387,7 @@ body {
 }
 
 .depth1 > li > a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -374,7 +431,7 @@ body {
 }
 
 .depth2 li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 14px;
   left: 0;
@@ -413,9 +470,9 @@ body {
   top: 50%;
   width: 117px;
   height: 70px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 0;
-  background: url('../images/logo.png') no-repeat center;
+  background: url("../images/logo.png") no-repeat center;
   background-size: contain;
 }
 
@@ -435,21 +492,21 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../images/icon-login.png') no-repeat center;
+  background: url("../images/icon-login.png") no-repeat center;
 }
 
 .interface-cart {
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../images/icon-cart.png') no-repeat center;
+  background: url("../images/icon-cart.png") no-repeat center;
 }
 
 .interface-search {
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../images/icon-search.png') no-repeat center;
+  background: url("../images/icon-search.png") no-repeat center;
 }
 
 /* visual */
@@ -488,7 +545,7 @@ body {
 
 .vs-main-1 {
   position: relative;
-  background: url('../images/visual-main-1.jpg') no-repeat center;
+  background: url("../images/visual-main-1.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -510,7 +567,7 @@ body {
 }
 
 .vs-main-2 {
-  background: url('../images/visual-main-2.jpg') no-repeat center;
+  background: url("../images/visual-main-2.jpg") no-repeat center;
   background-size: cover;
   max-width: 100%;
   height: 100%;
@@ -535,7 +592,7 @@ body {
 
 .vs-main-3 {
   position: relative;
-  background: url('../images/visual-main-3.jpg') no-repeat center;
+  background: url("../images/visual-main-3.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -588,7 +645,7 @@ body {
   display: block;
   width: 100vw;
   height: 593px;
-  background: #19302a url('../images/visual-shop.jpg') no-repeat center;
+  background: #19302a url("../images/visual-shop.jpg") no-repeat center;
   background-size: 1500px;
   margin-bottom: 30px;
 }
@@ -603,7 +660,7 @@ body {
   float: left;
   width: 33%;
   height: 540px;
-  background: url('../images/visual-motion-1.png') no-repeat center;
+  background: url("../images/visual-motion-1.png") no-repeat center;
   background-size: cover;
   margin-bottom: 30px;
 }
@@ -613,7 +670,7 @@ body {
   float: right;
   width: calc(67% - 30px);
   height: 540px;
-  background: url('../images/visual-motion-2.jpg') no-repeat center top;
+  background: url("../images/visual-motion-2.jpg") no-repeat center top;
   background-size: cover;
   margin-bottom: 30px;
   cursor: pointer;
@@ -635,7 +692,7 @@ body {
   float: left;
   width: 65%;
   height: 520px;
-  background: url('../images/visual-motion-3.png') no-repeat center top;
+  background: url("../images/visual-motion-3.png") no-repeat center top;
   background-size: cover;
   cursor: pointer;
 }
@@ -655,7 +712,7 @@ body {
   float: right;
   width: calc(35% - 30px);
   height: 520px;
-  background: url('../images/visual-motion-4.jpg') no-repeat center;
+  background: url("../images/visual-motion-4.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -708,7 +765,8 @@ body {
   margin-right: 60px;
 }
 
-.preview-category li {}
+.preview-category li {
+}
 
 .preview-category li a {
   display: block;
@@ -720,7 +778,7 @@ body {
   padding: 5px 15px;
 }
 
-.preview-category .strong  {
+.preview-category .strong {
   font-size: 16px;
   padding: 5px 1px;
   color: #333;
@@ -764,12 +822,13 @@ body {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   color: rgba(33, 33, 33, 0.85);
   line-height: 22px;
   margin-bottom: 3px;
 
-  overflow:hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
 }
@@ -778,7 +837,8 @@ body {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   line-height: 18px;
   color: rgba(33, 33, 33, 0.6);
   margin-bottom: 9px;
@@ -788,8 +848,9 @@ body {
   display: inline-block;
   font-size: 13px;
   font-weight: 300;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
-  color: rgba(33,33,33,0.45);
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
+  color: rgba(33, 33, 33, 0.45);
   text-decoration: line-through;
 }
 
@@ -827,7 +888,7 @@ body {
   display: inline-block;
   width: 9px;
   height: 9px;
-  border: 1px solid rgba(33,33,33,0.135);
+  border: 1px solid rgba(33, 33, 33, 0.135);
   font-size: 0;
   margin-left: 5px;
 }
@@ -879,10 +940,11 @@ body {
   width: 100%;
   font-size: 13px;
   font-weight: 600;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   color: #121212;
 
-  overflow:hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
 }
@@ -890,7 +952,8 @@ body {
 .best-products-price {
   font-size: 12px;
   font-weight: 600;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   color: #09342c;
 }
 
@@ -898,8 +961,9 @@ body {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
-  color: rgba(33,33,33,0.45);
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
+  color: rgba(33, 33, 33, 0.45);
   text-decoration: line-through;
 }
 
@@ -927,8 +991,6 @@ body {
   cursor: pointer;
 }
 
-
-
 .products hr {
   width: 100%;
   height: 1px;
@@ -941,7 +1003,8 @@ body {
   position: relative;
   display: block;
   padding-top: 75px;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
 }
 
 .notice-press .inner {
@@ -976,7 +1039,7 @@ body {
   line-height: 20px;
   color: #000;
 
-  overflow:hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
 }
@@ -1017,22 +1080,22 @@ body {
 }
 
 .notice li:first-child .picture {
-  background: url('../images/notice1.jpg') no-repeat center;
+  background: url("../images/notice1.jpg") no-repeat center;
   background-size: cover;
 }
 
 .notice li:nth-child(2) .picture {
-  background: url('../images/notice2.jpg') no-repeat center;
+  background: url("../images/notice2.jpg") no-repeat center;
   background-size: cover;
 }
 
 .notice li:nth-child(3) .picture {
-  background: url('../images/notice3.jpg') no-repeat center;
+  background: url("../images/notice3.jpg") no-repeat center;
   background-size: cover;
 }
 
 .notice li:last-child .picture {
-  background: url('../images/notice4.png') no-repeat 50% top;
+  background: url("../images/notice4.png") no-repeat 50% top;
   background-size: cover;
 }
 
@@ -1043,22 +1106,22 @@ body {
 }
 
 .press li:first-child .picture {
-  background: url('../images/press1.png') no-repeat center;
+  background: url("../images/press1.png") no-repeat center;
   background-size: cover;
 }
 
 .press li:nth-child(2) .picture {
-  background: url('../images/press2.png') no-repeat center;
+  background: url("../images/press2.png") no-repeat center;
   background-size: cover;
 }
 
 .press li:nth-child(3) .picture {
-  background: url('../images/press3.png') no-repeat center;
+  background: url("../images/press3.png") no-repeat center;
   background-size: cover;
 }
 
 .press li:last-child .picture {
-  background: url('../images/press5.jpg') no-repeat center;
+  background: url("../images/press5.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1082,7 +1145,8 @@ body {
   color: #666;
   text-transform: uppercase;
   margin: 70px 0;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
 }
 
 .insta-pic {
@@ -1103,7 +1167,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta1.jpg') no-repeat center;
+  background: url("../images/insta1.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1111,7 +1175,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta2.jpg') no-repeat center;
+  background: url("../images/insta2.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1119,7 +1183,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta3.jpg') no-repeat center;
+  background: url("../images/insta3.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1127,7 +1191,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta4.jpg') no-repeat center;
+  background: url("../images/insta4.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1135,7 +1199,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta5.jpg') no-repeat center;
+  background: url("../images/insta5.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1143,7 +1207,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta6.jpg') no-repeat center;
+  background: url("../images/insta6.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1151,7 +1215,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta7.jpg') no-repeat center;
+  background: url("../images/insta7.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1159,7 +1223,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta8.jpg') no-repeat center;
+  background: url("../images/insta8.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1167,7 +1231,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta9.jpg') no-repeat center;
+  background: url("../images/insta9.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1175,7 +1239,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../images/insta10.jpg') no-repeat center;
+  background: url("../images/insta10.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1195,12 +1259,12 @@ body {
   font-weight: 700;
   line-height: 40px;
   color: #fff;
-  font-family: 'helvetica','Noto Sans Korean','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+  font-family: "helvetica", "Noto Sans Korean", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Nanum Gothic", "Noto Sans", "sans-serif";
   background: #183029;
   border: none;
   cursor: pointer;
 }
-
 
 /* footer */
 .footer {
@@ -1218,7 +1282,7 @@ body {
 .footer-logo {
   width: 90px;
   height: 45px;
-  background: url('../images/logo-white.png') no-repeat left center;
+  background: url("../images/logo-white.png") no-repeat left center;
   background-size: contain;
   margin-bottom: 20px;
 }
